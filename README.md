@@ -19,6 +19,7 @@ source env/bin/activate
 
 python3 recognize_person.py -l known_1.jpg
 python3 recognize_person.py -l unknown.jpg
+python3 recognize_person.py -l multiple_faces.png
 ```
 
 ## Steps Followed
