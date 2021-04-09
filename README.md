@@ -7,7 +7,7 @@ There are two main files.
 `save_update_encodings.py` which encode the known faces so that the recognition step is faster. Addionally it takes the known face directory. By default it assumes that a `known` folder is present which contains the known faces if the known face direcotry is not passsed. Thus file can be useful when the system is idle and it has many images to encode for being used in later query.   
 
 
-This also supports mutiple faces present in the Image and tells from left which one is whom from the known faces. If a person is not present then it prints unknown face.  
+This also supports mutiple faces present in the Image and tells from left which one is whom from the known faces. If a person is not present then it prints unknown face. Codes are commented with explanation of each steps. 
 
 ## Usage   
 `virtualenv` is required to follow the steps. To install virtual environment. `sudo apt-get install python3-pip` and `pip3 install virtualenv` on the terminal. 
