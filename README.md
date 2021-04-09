@@ -10,6 +10,8 @@ There are two main files.
 This also supports mutiple faces present in the Image and tells from left which one is whom from the known faces. If a person is not present then it prints unknown face.  
 
 ## Usage   
+`virtualenv` is required to follow the steps. To install virtual environment. `sudo apt-get install python3-pip` and `pip3 install virtualenv` on the terminal. 
+The code has been tested on Linux OS and Python3.8. 
 ```
 git clone https://github.com/Mushahid2521/Face_Recognition.git
 cd Face_Recognition
