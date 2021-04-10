@@ -4,18 +4,19 @@ This repository contains the code for Face Recognition project where the user ca
 There are two main files.  
 `recognize_person.py` which recognize the face passed as input. Additionally it takes the known face directory and encoding file as input. If only the known face directory is passed then it encodes those and saves into a pickle file. If both known and encoding files is present then it updates the encoding file.  
 
-`save_update_encodings.py` which encode the known faces so that the recognition step is faster. Addionally it takes the known face directory. By default it assumes that a `known` folder is present which contains the known faces if the known face direcotry is not passsed. Thus file can be useful when the system is idle and it has many images to encode for being used in later query.   
+`save_update_encodings.py` which encode the known faces so that the recognition step is faster. Addionally it takes the known face directory. By default it assumes that a `known` folder is present which contains the known faces if the known face direcotry is not passsed. This file can be useful when the system is idle and it has many images to encode for being used in later query.  Ex: `python3 save_update_encodings.py -d known`. It creates an encodings.pickle file on the working directory. If `python3 save_update_encodings.py -d known -e encodings.pickle` is executed then it updates the pickle file with the known folder images. 
 
 
 This also supports mutiple faces present in the Image and tells from left which one is whom from the known faces. If a person is not present then it prints unknown face. Codes are commented with explanation of each steps. 
 
 ## Usage   
-`virtualenv` is required to follow the steps. To install virtual environment. `sudo apt-get install python3-pip` and `pip3 install virtualenv` on the terminal. 
+`virtualenv` is required to follow the steps. To install virtual environment, please run `sudo apt-get install python3-pip` and `pip3 install virtualenv` on the terminal. 
 The code has been tested on Linux OS and Python3.8. 
 ```
 git clone https://github.com/Mushahid2521/Face_Recognition.git
 cd Face_Recognition
 source env/bin/activate
+
 
 python3 recognize_person.py -l known_1.jpg
 python3 recognize_person.py -l unknown.jpg
